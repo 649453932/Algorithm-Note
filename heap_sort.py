@@ -6,7 +6,6 @@ def heap_sort(lis):
         heapInsert(lis, i)
     # 将首末位置互换，末位确定位置，对前面的位置调整为大根堆，循环此过程
     heap_size = len(lis)
-
     heapify(lis, heap_size - 1)
 
 
@@ -36,3 +35,16 @@ a = [3, 4, 5, 1, 2, 6, 4]
 print(a)
 heap_sort(a)
 print(a)
+
+
+# # 使用库
+# import heapq
+# def heapsort(iterable):
+#     h = []
+#     for value in iterable:
+#         heapq.heappush(h, value)
+#     return [heapq.heappop(h) for i in range(len(h))]
+
+# a = [3, 4, 5, 1, 2, 6, 4]
+# print(a)
+# print(heapsort(a))
