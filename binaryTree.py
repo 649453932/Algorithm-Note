@@ -65,4 +65,4 @@ def postorder2(root):
         root = tmp.pop()
     res = res[::-1]
     for data in res:
-        print(res)
+        print(data)
